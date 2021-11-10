@@ -1,5 +1,6 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+const port = 3002;
 
 app.get('/', function (req, res) {
   res.send('ToDo APP API')
@@ -13,6 +14,10 @@ app.get('/tasks', function (req, res) {
   res.send('Rota ativada com GET e recurso Tarefas: valores de tarefas devem ser retornadas')
 })
 
-app.listen(3002, () => {
-   console.log('Servidor rodando')
+app.listen(port, function() {
+  console.log(`Example app listening at http://localhost:${port}`)
 })
+
+// app.listen(3002, () => {
+//    console.log('Servidor rodando')
+// })
