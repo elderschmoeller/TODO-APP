@@ -3,17 +3,31 @@
     "express": "^4.17.1",
     "node-fetch": "^3.1.0"
   },
-  "name": "aula4.1",
+  "name": "todo.app",
   "version": "0.0.1",
   "description": "Projeto para estudar Express",
   "main": "aula4.js",
   "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "express",
-    "node"
+    "node",
+    "nodemon"
   ],
   "author": "Elder Schmoeller",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elderschmoeller/TODO-APP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elderschmoeller/TODO-APP/issues"
+  },
+  "homepage": "https://github.com/elderschmoeller/TODO-APP#readme"
 }
